@@ -29,7 +29,7 @@ void Browser::navigateForward() {
         currentIndex++;
         std::cout << "Haz navegado en: " << history[currentIndex] << std::endl;
     } else {
-        std::cout << "No hay más páginas hacia adelante." << std::endl;
+        std::cout << "No hay mas paginas hacia adelante." << std::endl;
     }
 }
 
@@ -38,7 +38,7 @@ void Browser::navigateBackward() {
         currentIndex--;
         std::cout << "Haz navegado en: " << history[currentIndex] << std::endl;
     } else {
-        std::cout << "No hay más páginas hacia atrás." << std::endl;
+        std::cout << "No hay mas paginas hacia atras." << std::endl;
     }
 }
 
@@ -61,7 +61,7 @@ void Browser::removeFavorite(std::string folder, std::string identifier) {
             if (removedFavorites.size() > 5) {
                 removedFavorites.erase(removedFavorites.begin());
             }
-            favs.erase(it);
+            favs.erase(it, favs.end());
         }
     }
 }
@@ -74,8 +74,7 @@ void Browser::restoreFavorites() {
 }
 
 void Browser::organizeFavorites(std::string folder) {
-    // Functionality for organizing favorites into folders
-    // Placeholder for the actual implementation
+
 }
 
 void Browser::exportToHTML() {

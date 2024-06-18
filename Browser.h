@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <algorithm> // Incluir para usar std::none_of y std::remove_if
 #include "DataHandler.h"
 
 class Browser {
